@@ -1,0 +1,9 @@
+{
+  "name": "@theorylabs/project-praxis",
+  "version": "0.0.1",
+  "description": "Monorepo for TheoryLabs project \"Praxis|πρᾶξις\" (@theorylabs/praxis)",
+  "main": "index.js",
+  "author": "Branden Dane <DaneTheory@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
