@@ -2,8 +2,33 @@
   "name": "@theorylabs/project-praxis",
   "version": "0.0.1",
   "description": "Monorepo for TheoryLabs project \"Praxis|πρᾶξις\" (@theorylabs/praxis)",
-  "main": "index.js",
-  "author": "Branden Dane <DaneTheory@gmail.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "author": {
+    "name": "Branden Dane",
+    "email": "Dane@TheoryLabs.dev",
+    "url": "https://WhoAmI.TheoryLabs.Dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheoryLabs/Praxis.git"
+  },
+  "homepage": "https://github.com/TheoryLabs/Praxis#README",
+  "bugs": {
+    "url": "https://github.com/TheoryLabs/Praxis/issues",
+    "email": "Dane@TheoryLabs.dev"
+  },
+  "workspaces": [ 
+    "workspaces/**/*"
+  ],
+  "scripts": {
+    "oao:status": "oao status",
+    "oao:bootstrap": "oao bootstrap",
+    "oao:clean": "oao clean",
+    "status": "yarn oao:status"
+  },
+  "devDependencies": {
+    "oao": "latest",
+    "ultra-runner": "latest"
+  }
 }
