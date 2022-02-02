@@ -22,10 +22,15 @@
     "workspaces/**/*"
   ],
   "scripts": {
+    "ultra:info": "ultra --info",
+    "ultra:list": "ultra --list",
     "oao:status": "oao status",
     "oao:bootstrap": "oao bootstrap",
     "oao:clean": "oao clean",
-    "status": "yarn oao:status"
+    "stats": "yarn oao:status & yarn ultra:info --raw",
+    "prep": "yarn oao:bootstrap",
+    "reset": "yarn oao:clean",
+    "tasks": "yarn ultra:list"
   },
   "devDependencies": {
     "oao": "latest",
