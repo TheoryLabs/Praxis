@@ -21,16 +21,24 @@
   "workspaces": [ 
     "workspaces/**/*"
   ],
+  "config": {
+    "": "foobar"
+  },
+  "exports": {
+    ".": "package.json"
+  },
   "scripts": {
     "ultra:info": "ultra --info",
     "ultra:list": "ultra --list",
     "oao:status": "oao status",
     "oao:bootstrap": "oao bootstrap",
     "oao:clean": "oao clean",
-    "stats": "yarn oao:status & yarn ultra:info --raw",
+    "envs:manifest": "node -e 'console.log(process.env)' | grep npm_package_config",
+    "stats": "yarn oao:status & yarn ultra:info --no-pretty --raw",
     "prep": "yarn oao:bootstrap",
     "reset": "yarn oao:clean",
-    "tasks": "yarn ultra:list"
+    "tasks": "yarn ultra:list",
+    "envs": "yarn envs:manifest"
   },
   "devDependencies": {
     "oao": "latest",
